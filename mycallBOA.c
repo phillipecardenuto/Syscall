@@ -13,12 +13,16 @@ asmlinkage unsigned long  sys_randcall( unsigned long int begin , unsigned long 
 	int i,j;
 	struct timeval time;
 	/*ITERVAL ERROR*/
+    if(begin==0)
+	begin++;
     if (end <= begin)
-        return 0;
+        return -1;
 
     do_gettimeofday(&time);
     time_u = time.tv_usec;
-    
+    /*ERROR TIME_U*/
+    if (time_u < 0)
+        return -2;
     /*Reescala o valor do tempo do sistema no intervalo dado*/
         //Inicializa os vetores
     for(i=0;i<6;i++)
@@ -55,9 +59,6 @@ asmlinkage unsigned long  sys_randcall( unsigned long int begin , unsigned long 
     for(i=15;i>5;i--){
         interval=res[i]+10*interval;
     }
-
-    if (interval + begin == 0)
-	return 1;
 
     return interval + begin ;
 }
