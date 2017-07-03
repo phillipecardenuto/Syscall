@@ -44,7 +44,7 @@ int main() {
             printf("O retorno da chamada de sistema eh primo!\n");
     }
 
-    printf("\n---------TESTANDO SE O NUMERO EH DE FRIBONACCI---------\n");
+    printf("\n---------TESTANDO SE O NUMERO EH DE FIBONACCI---------\n");
     if (aleatorio == 0) {
         printf("O retorno da chamada de sistema eh um numero de fribonacci!\n");
         flag = 0;
