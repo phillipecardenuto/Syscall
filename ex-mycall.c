@@ -46,17 +46,17 @@ int main() {
 
     printf("\n---------TESTANDO SE O NUMERO EH DE FIBONACCI---------\n");
     if (aleatorio == 0) {
-        printf("O retorno da chamada de sistema eh um numero de fribonacci!\n");
+        printf("O retorno da chamada de sistema eh um numero de fibonacci!\n");
         flag = 0;
     } else {
         flag = 1;
         while (flag) {
             if (aleatorio == F1) {
-                printf("O retorno da chamada de sistema eh um numero de fribonacci!\n");
+                printf("O retorno da chamada de sistema eh um numero de fibonacci!\n");
                 flag = 0;
             }
             if (F1 > aleatorio) {
-                printf("O retorno da chamada de sistema nao eh um numero de fribonacci!\n");
+                printf("O retorno da chamada de sistema nao eh um numero de fibonacci!\n");
                 flag = 0;
             }
             aux = F1;
