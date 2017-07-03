@@ -4,7 +4,7 @@
 #include <asm/time.h>
 
 
-asmlinkage long sys_rand(unsigned long begin, unsigned long end) {    
+asmlinkage unsigned long sys_rand(unsigned long begin, unsigned long end) {    
     
     
     static unsigned long next = 0;
