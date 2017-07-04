@@ -12,3 +12,6 @@ The randcall syscall outputs pseudo-random integers in the interval [begin, end]
 
 ### ERRORS:
 0 - the min value is greater and equal than the end value, the begin value is less than zero or the end value is greater than 1,000,000
+
+### Warning:
+Do not use this function in infinite loop expecting random values. The function returns pseudo-random values if called isolated.
